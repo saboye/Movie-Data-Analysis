@@ -1,35 +1,38 @@
-# DSC540 Data Preparation
+
+# <h1 align="center" style="color:blue;" id="heading">DSC540 Data Preparation</h1>
+# <h1 align="center" style="color:blue;" id="heading">Final Project</h1>
 
 ![GitHub contributors](https://img.shields.io/github/contributors/saboye/DSC540-Data-Preparation?color=blue&logo=github&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/saboye/DSC540-Data-Preparation?logo=github&style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues-raw/saboye/DSC540-Data-Preparation?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/saboye/DSC540-Data-Preparation?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/saboye/DSC540-Data-Preparation?style=for-the-badge)
+![Bellevue University](https://img.shields.io/badge/Bellevue%20University-blue?style=for-the-badge&logo=university)
+
 
 ## Project Overview
 
-This project aims to prepare and analyze movie data from various sources, including flat files, APIs, and web data. The final goal is to merge the datasets, load them into a SQLite database, and create visualizations to uncover insights about the movie industry.
+This project aims to analyze and uncover factors contributing to movies' commercial success and audience reception by integrating and examining data from The Movie Database (TMDB), The Open Movie Database (OMDb) API, and IMDb. The analysis leverages detailed movie credits, financial metrics, audience ratings, and other relevant data to provide insights into industry trends, patterns, and predictors of movie performance.
 
-## Data Sources
+### Data Sources
 
-### Flat File
-- **Description**: Contains detailed information on movie credits and various movie attributes from The Movie Database (TMDB).
-- **Files**: `tmdb_5000_credits.csv`, `tmdb_5000_movies.csv`
+### 1. TMDB Movie Metadata
+- **Description:** Detailed information on movie credits and various movie attributes, including cast, crew, budgets, revenues, genres, and more.
+- **Link:** [TMDB Movie Metadata](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-### API
-- **Description**: The OMDb API provides detailed data on movies and TV series.
-- **Link**: [OMDb API](https://www.omdbapi.com/)
+### 2. OMDb API
+- **Description:** RESTful web service providing detailed data, including titles, year, ratings, plot descriptions, and poster images for movies and TV series. The OMDb API was used to expand the dataset using movie titles extracted from the TMDB dataset.
+- **Link:** [OMDb API](https://www.omdbapi.com/)
 
-### Website
-- **Description**: IMDb offers comprehensive data and ratings for movies, TV shows, and celebrities.
-- **Link**: [IMDb](https://www.imdb.com/)
+### 3. IMDb
+- **Description:** Comprehensive database and ratings for movies, TV shows, and celebrities. Source for movie ratings, reviews, and detailed cast and crew information.
+- **Link:** [IMDb](https://datasets.imdbws.com/)
 
 ## Project Approach
 
-1. **Data Cleaning and Preprocessing**: Standardize movie titles, handle missing values, and resolve discrepancies.
-2. **Data Integration**: Merge datasets on common keys (e.g., movie titles, IMDb IDs) to create a unified dataset.
-3. **Analysis**: Conduct exploratory data analysis (EDA) to identify trends, patterns, and outliers.
-4. **Modeling** (if applicable): Apply statistical or machine learning models to predict movie success metrics.
+1. **Data Cleaning and Preprocessing:** Ensuring consistency and accuracy in movie titles, handling missing values, and resolving discrepancies in movie identifiers across the datasets.
+2. **Data Integration:** Merging datasets on the common key of movie titles to create a unified dataset.
+3. **Database Management:** Loading the cleaned and merged dataset into an SQLite database to facilitate efficient querying and analysis.
 
 ## Visualizations
 
@@ -40,24 +43,35 @@ This project aims to prepare and analyze movie data from various sources, includ
 5. **Bar Plot of Revenue by Genre**
 6. **Total Revenue Over the Years**
 7. **Count of Movies Released Each Year**
+8. **Count of Movies by Decade**
+9. **Revenue by Genre**
+10. **Scatter Plot of Budget vs. Revenue**
+11. **Heatmap of Genre vs. Status**
+12. **Top 10 Production Companies**
+13. **Pairplot of Budget, Revenue, Popularity, and Vote Average**
 
-## Key Takeaways
+## Key Takeaways: Data Preparation from Different Sources
 
-1. **Data Preparation**: Combining data from flat files, APIs, and web data requires careful preprocessing and cleaning.
-2. **Integration Challenges**: Ensuring consistency across datasets is crucial for accurate analysis.
-3. **Visualization**: Effective visualizations help uncover insights and trends in the data.
-
-## Ethical Considerations
-
-1. **Privacy Concerns**: Handle individual data responsibly, respecting privacy.
-2. **Bias and Representation**: Be aware of inherent biases in the data.
-3. **Impact on Perception**: Ensure a balanced and fair approach to data analysis.
+1. **Data Integration:** Successfully combining data from flat files, APIs, and web scraping requires careful planning and execution. Ensuring consistency across different datasets is crucial for accurate analysis.
+2. **Handling Missing Values:** Managing missing data is a critical step in preparing datasets for analysis. Techniques such as imputation or exclusion must be applied based on the context and availability of data.
+3. **Standardization:** Standardizing data formats, such as date formats and numerical values, ensures uniformity and reduces the risk of errors during the merging process.
+4. **Data Cleaning:** Identifying and correcting discrepancies, such as duplicate entries or inconsistent naming conventions, is essential for creating a reliable and cohesive dataset.
+5. **Merging Strategies:** Choosing appropriate keys for merging datasets, such as movie titles or unique identifiers, is vital. Ensuring these keys are clean and standardized across datasets facilitates successful integration.
+6. **Ethical Considerations:** Throughout the data preparation process, ethical considerations such as data privacy, bias, and representation must be taken into account to ensure responsible and fair analysis.
 
 ## References
 
-- TMDB Movie Metadata. Retrieved from [Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
-- OMDb API. Retrieved from [OMDb](https://www.omdbapi.com/)
-- IMDb. Retrieved from [IMDb](https://www.imdb.com/)
+1. **TMDB Movie Metadata**  
+   Description: The provided flat files `tmdb_5000_credits.csv` and `tmdb_5000_movies.csv` contain detailed information on movie credits and various movie attributes from TMDB.  
+   Link: [TMDB Movie Metadata](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+
+2. **OMDb API**  
+   Description: The OMDb API (The Open Movie Database) is a RESTful web service for obtaining movie information. It offers detailed data, including titles, year, ratings, plot descriptions, and poster images for movies and TV series. In this project, movie titles extracted from the `tmdb_5000_credits.csv` file were used as search queries for the OMDb API to expand the dataset.  
+   Link: [OMDb API](https://www.omdbapi.com/)
+
+3. **IMDb**  
+   Description: IMDb (Internet Movie Database) offers a comprehensive database and ratings for movies, TV shows, and celebrities. It's a crucial source for movie ratings, reviews, and detailed cast and crew information.  
+   Link: [IMDb](https://datasets.imdbws.com/)
 
 ## License
 
