@@ -1,6 +1,6 @@
 
-# <h1 align="center" style="color:blue;" id="heading">DSC540 Data Preparation</h1>
-# <h1 align="center" style="color:blue;" id="heading">Final Project</h1>
+# <h1 align="center" style="color:blue;" id="heading">Movie-Data-Analysis </h1>
+# <h1 align="center" style="color:blue;" id="heading"> Project</h1>
 
 ![GitHub contributors](https://img.shields.io/github/contributors/saboye/DSC540-Data-Preparation?color=blue&logo=github&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/saboye/DSC540-Data-Preparation?logo=github&style=for-the-badge)
