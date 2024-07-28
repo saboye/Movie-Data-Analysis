@@ -1,13 +1,22 @@
 
-# <h1 align="center" style="color:blue;" id="heading">Movie-Data-Analysis </h1>
-# <h1 align="center" style="color:blue;" id="heading"> Project</h1>
+<div align="center">
+  <h1>Movie-Data-Analysis</h1>
+</div>
+<div align="center">
+  <h1>Project</h1>
+</div>
 
-![GitHub contributors](https://img.shields.io/github/contributors/saboye/DSC540-Data-Preparation?color=blue&logo=github&style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/saboye/DSC540-Data-Preparation?logo=github&style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues-raw/saboye/DSC540-Data-Preparation?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/saboye/DSC540-Data-Preparation?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/saboye/DSC540-Data-Preparation?style=for-the-badge)
-![Bellevue University](https://img.shields.io/badge/Bellevue%20University-blue?style=for-the-badge&logo=university)
+<p align="center">
+    <img src="https://img.shields.io/github/contributors/saboye/Movie-Data-Analysis?color=blue&logo=github&style=for-the-badge" alt="GitHub contributors" />
+    <img src="https://img.shields.io/github/forks/saboye/Movie-Data-Analysis?logo=github&style=for-the-badge" alt="GitHub forks" />
+    <img src="https://img.shields.io/github/issues-raw/saboye/Movie-Data-Analysis?style=for-the-badge" alt="GitHub issues" />
+    <img src="https://img.shields.io/github/license/saboye/Movie-Data-Analysis?style=for-the-badge" alt="GitHub license" />
+    <img src="https://img.shields.io/github/last-commit/saboye/Movie-Data-Analysis?style=for-the-badge" alt="GitHub last commit" />
+    <img src="https://img.shields.io/badge/pandas-1.3.5-blue?style=for-the-badge&logo=pandas" alt="Pandas" />
+    <img src="https://img.shields.io/badge/numpy-1.20.3-blue?style=for-the-badge&logo=numpy" alt="NumPy" />
+    <img src="https://img.shields.io/badge/scikit--learn-0.24.2-blue?style=for-the-badge&logo=scikit-learn" alt="scikit-learn" />
+    <img src="https://img.shields.io/badge/matplotlib-3.4.2-blue?style=for-the-badge&logo=matplotlib" alt="Matplotlib" />
+</p>
 
 
 ## Project Overview
