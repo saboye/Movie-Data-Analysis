@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>Movie-Data-Analysis</h1>
+  <h1>Movie Data Analysis</h1>
 </div>
 <div align="center">
   <h1>Project</h1>
